@@ -363,7 +363,7 @@ input[type="checkbox"] {
     }
 }
 
-@media (max-width:767px) {
+@media (max-width:790px) {
     .hamburger-btn i {
         display: inline-block;
     }
@@ -381,8 +381,8 @@ input[type="checkbox"] {
     }
     .search-bar .search-section {
         position: absolute;
-        top: 400%;
-        right: 24px;
+        top: 398%;
+        right: 26px;
         transform: scale(0.9);
     }
     .right-side ul {
