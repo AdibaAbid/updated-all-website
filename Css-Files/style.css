@@ -157,7 +157,9 @@ ul li {
     padding: 4px 8px 9px 10px;
 }
 
+
 /* search bar styling ends */
+
 
 /* Categories Navbar Styling */
 
@@ -203,7 +205,9 @@ ul li {
     color: #FF6600;
 }
 
+
 /* Navbar styling ends */
+
 
 /* ToolTip Styling */
 
@@ -267,7 +271,9 @@ ul li {
     transform-origin: bottom center;
 }
 
+
 /* ToolTip Styling End */
+
 
 /* Hamburger styling */
 
@@ -308,7 +314,9 @@ input[type="checkbox"] {
     display: none;
 }
 
+
 /* Hamburger styling End*/
+
 
 /* About-US PAge Styling */
 
@@ -544,7 +552,9 @@ input[type="checkbox"] {
     font-weight: normal;
 }
 
+
 /* AboutUS-page syling end */
+
 
 /* Menu Page section*/
 
@@ -654,7 +664,9 @@ input[type="checkbox"] {
     background-color: #6d2c57;
 }
 
+
 /* Menu page section End */
+
 
 /* Latest Feature section start */
 
@@ -694,11 +706,15 @@ input[type="checkbox"] {
 }
 
 .Product-feature .product-title {
-    font-size: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 
 /* Latest faeture section End */
+
+
 /* /* CONTACT US SECTION */
 
 .contact-section {
@@ -729,7 +745,7 @@ input[type="checkbox"] {
     font-size: 16px;
     font-weight: 500;
     margin: 0 3px;
-    padding-top: 20px ;
+    padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -759,7 +775,6 @@ input[type="checkbox"] {
     color: #ff523b;
     margin-bottom: 1em;
 }
-
 
 .contact-divs {
     flex: 50%;
@@ -794,7 +809,6 @@ label {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 2%;
-    
 }
 
 .page-division {
@@ -819,6 +833,7 @@ label {
     font-size: 1.3em;
     transition: 0s;
 }
+
 .contact-divs h2 {
     color: #333;
     font-size: 2em;
@@ -841,12 +856,12 @@ label {
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-
 .contact-divs iframe {
     width: 100%;
     height: 350px;
     margin-top: 3em;
 }
+
 .call-btn {
     display: inline-block;
     width: 100%;
@@ -863,7 +878,9 @@ label {
     color: #f36107;
 }
 
+
 /* CONTACT SECTION END */
+
 
 /* Footer section start*/
 
@@ -897,7 +914,6 @@ label {
     font-weight: 600;
     padding: 2px 10px;
     margin-right: 10px;
-    
 }
 
 .footer ul>li>a>i {
@@ -963,69 +979,70 @@ label {
     cursor: pointer;
 }
 
-.product-details{
+.product-details {
     display: flex;
     margin: 50px 0;
 }
 
-.product-image{
+.product-image {
     flex: 1;
 }
 
-.product-image img{
+.product-image img {
     width: 100%;
     height: 100%;
     cursor: pointer;
 }
 
-.product-description{
+.product-description {
     flex: 1;
     margin-left: 10px;
     padding: 10px;
 }
 
-.product-description small{
+.product-description small {
     background-color: #FF6600;
     color: #ffffff;
     padding: 3px 5px;
 }
 
-.product-description h2{
+.product-description h2 {
     padding: 10px 0;
     text-transform: uppercase;
     color: #555555;
 }
 
-.product-description .prod-short-desc{
+.product-description .prod-short-desc {
     padding: 10px 0 !important;
 }
 
-.product-description .product-rating{
+.product-description .product-rating {
     padding: 10px 0;
     color: #990066;
 }
 
-.product-description .product-price{
+.product-description .product-price {
     padding: 10px 0;
     font-size: 30px;
     color: #FF6600;
 }
-.product-description .available{
-    padding: 10px 0;   
+
+.product-description .available {
+    padding: 10px 0;
 }
 
-.product-description .qty-btn{
+.product-description .qty-btn {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     margin: 20px 0;
 }
 
-.qty-btn > p{
+.qty-btn>p {
     margin-right: 10px;
 }
 
-.qty-btn > input{
+.qty-btn>input {
     width: 50px;
     height: 30px;
     border: 1px solid #FF6600;
@@ -1034,7 +1051,7 @@ label {
     margin: 0 10px;
 }
 
-.qty-btn .prod-cart-btn{
+.qty-btn .prod-cart-btn {
     margin: 0 10px;
     padding: 8px 10px;
     border: none;
@@ -1044,32 +1061,37 @@ label {
     transition: all .5s ease;
 }
 
-.prod-cart-btn:hover{
+.prod-cart-btn:hover {
     background-color: #FF9900;
 }
+
+
 /* Styling For Zoom Image */
 
-/* Footer section End */ 
+
+/* Footer section End */
+
+
 /* Styles For SLider */
 
-.slider{
+.slider {
     position: relative;
     overflow: hidden;
 }
 
-.my-slider .slider-content{
+.my-slider .slider-content {
     width: 100vw;
     height: 100vh;
     position: relative;
 }
 
-.my-slider .slider-content img{
+.my-slider .slider-content img {
     width: 100%;
     display: block;
     height: auto;
 }
 
-.slider-content .slider-desc{
+.slider-content .slider-desc {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -1086,16 +1108,17 @@ label {
     cursor: pointer;
 }
 
-.slider-content .slider-desc h1{
+.slider-content .slider-desc h1 {
     color: #ffffff;
     font-size: 50px;
-    padding: 20px 20px; 
+    padding: 20px 20px;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 5px black;
 }
-.slider-btn{
+
+.slider-btn {
     width: 50px;
     height: 25px;
     outline: none;
@@ -1104,35 +1127,34 @@ label {
     color: #FFFFFF;
     background-color: #FF6600;
     position: absolute;
-    top:50%
+    top: 50%
 }
 
-.slider-btn:hover{
+.slider-btn:hover {
     background-color: #FF9900;
 }
 
-.prev-btn{
+.prev-btn {
     left: 5%;
 }
 
-.next-btn{
+.next-btn {
     right: 5%;
 }
 
 
-
 /* Responsive Styles */
-@media only screen and (max-width:1000px){
-    .contact-divs h2{
+
+@media only screen and (max-width:1000px) {
+    .contact-divs h2 {
         font-size: 1.7em;
     }
-    .contact-divs iframe{
+    .contact-divs iframe {
         height: 250px;
     }
-    .contactUs-heading::after{
+    .contactUs-heading::after {
         width: 45%;
     }
-
     .wrap-about {
         top: 72%;
         margin: 0;
@@ -1140,7 +1162,6 @@ label {
     .about-categories {
         margin: 0;
     }
-
     nav {
         display: block;
         width: 100%;
@@ -1192,21 +1213,18 @@ label {
         justify-content: space-evenly;
         text-align: unset;
     }
-
-    .slider-content .slider-desc{
+    .slider-content .slider-desc {
         top: 40%;
         left: 30%;
         transform: translate(-30%, -40%);
         max-width: 550px;
         height: 200px;
-        
     }
-    .slider-content .slider-desc h1{
+    .slider-content .slider-desc h1 {
         font-size: 40px;
-        padding: 20px 20px; 
+        padding: 20px 20px;
     }
 }
-
 
 @media only screen and (max-width:790px) {
     .hamburger-btn i {
@@ -1283,31 +1301,28 @@ label {
     .col-4 {
         flex-basis: 50%;
     }
-    
-    .page-division{
+    .page-division {
         flex-direction: column;
         text-align: center;
     }
-    .inputs{
+    .inputs {
         width: 100%;
     }
-    .contact-section{
+    .contact-section {
         padding: 0 1em;
     }
-
-    .slider-content .slider-desc{
+    .slider-content .slider-desc {
         top: 25%;
         left: 40%;
         transform: translate(-40%, -25%);
         max-width: 450px;
         height: 150px;
     }
-    
-    .slider-content .slider-desc h1{
+    .slider-content .slider-desc h1 {
         font-size: 30px;
-        padding: 5px 10px; 
+        padding: 5px 10px;
     }
-    .slider-btn{
+    .slider-btn {
         top: 35%;
     }
 }
@@ -1364,19 +1379,18 @@ label {
     .col-4 {
         flex-basis: 100%;
     }
-
-    .slider-content .slider-desc{
+    .slider-content .slider-desc {
         top: 20%;
         left: 40%;
         transform: translate(-40%, -20%);
         max-width: 400px;
         height: 100px;
     }
-    .slider-content .slider-desc h1{
+    .slider-content .slider-desc h1 {
         font-size: 16px;
-        padding: 10px 10px; 
+        padding: 10px 10px;
     }
-    .slider-btn{
+    .slider-btn {
         top: 25%;
         width: 20px;
         height: 25px;
@@ -1384,20 +1398,20 @@ label {
 }
 
 @media only screen and (max-width:567px) {
-    .product-details{
+    .product-details {
         flex-direction: column;
     }
-    
-    .product-description{
+    .product-description {
         margin: 20px 0 0 0;
         padding: 0px;
     }
 }
 
-@media only screen and (max-width:480px){
-    .contact-divs h2::after{
-        width:50%;
-    }   
+@media only screen and (max-width:480px) {
+    .contact-divs h2::after {
+        width: 50%;
+    }
 }
+
 
 /* Responsive Styles */
