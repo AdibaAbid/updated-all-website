@@ -4,15 +4,19 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+
     <!-- ICON Link-->
     <script src="https://kit.fontawesome.com/418d14164c.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
+    <!-- FontAwsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,400;1,500&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"rel="stylesheet">
+    <!-- CSS Files -->
     <link rel="stylesheet" href="../Css-Files/categories-style.css" />
-    <link rel="stylesheet" href="../Css-Files/style.css">
+    <link rel="stylesheet" href="../Css-Files/style.css" />
 
-    <title>Fast Food | Chatkhara Meal</title>
+    <title>Chatkhara Meal | Fast Food</title>
 </head>
 
 <body>
@@ -25,32 +29,36 @@
             <div class="search-section">
                 <input type="text" placeholder="Search here..." />
                 <button class="search-btn">
-          <i class="fas fa-search"></i>
-        </button>
+            <i class="fas fa-search"></i>
+          </button>
                 <button class="tool-tip">
-          <a href="#">
-            <i class="fas fa-heart"></i>
-            <span>Wish List</span>
-          </a>
-        </button>
+            <a href="#">
+              <i class="fas fa-heart"></i>
+              <span>Wish List</span>
+            </a>
+          </button>
                 <button class="tool-tip">
-          <a href="#">
-            <i class="fas fa-user-circle"></i>
-            <span class="login">Login Or Signup</span>
-          </a>
-        </button>
+            <a href="#">
+              <i class="fas fa-user-circle"></i>
+              <span class="login">Login Or Signup</span>
+            </a>
+          </button>
             </div>
         </div>
         <nav>
             <div>
-                <img src="../images/Logo/Logo-Chatkhara-01.png" alt="Chatkhara Meal Logo" />
+                <a href="../index.html"><img src="../images/Logo/Logo-Chatkhara-01.png"alt="Chatkhara Meal Logo"></a>
             </div>
             <div class="right-side">
+                <input type="checkbox" id="click">
+                <label for="click" class="hamburger-btn">
+                     <i class="fas fa-bars"></i>
+                </label>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../index.html#menu-section">Menu</a></li>
                     <li><a href="../aboutUS.html">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="../contact.html">Contact Us</a></li>
                     <li class="add-to-cart">
                         <a href="#">
                             <i class="fas fa-cart-plus"></i>
@@ -60,27 +68,31 @@
                 </ul>
             </div>
         </nav>
+        <div class="content">
+            <div>
     </header>
+    <!-- Header End -->
 
-    <!-- Navigation -->
+    <!-- Navigation categories -->
     <div class="nav-bar">
         <nav class="categories">
             <ul>
                 <li>
-                    <a href="./fastFood.html"><i class="fas fa-hamburger"></i> FastFood</a>
+                    <a href="fastFood.html"><i class="fas fa-hamburger"></i> FastFood</a>
                 </li>
                 <li>
-                    <a href="./snacks.html"><i class="fas fa-cookie"></i> Snacks</a>
+                    <a href="snacks.html"><i class="fas fa-cookie"></i> Snacks</a>
                 </li>
                 <li>
-                    <a href="./bakery-items.html"><i class="fas fa-bread-slice"></i> Bakery</a>
+                    <a href="bakery-items.html"><i class="fas fa-bread-slice"></i> Bakery</a>
                 </li>
                 <li>
-                    <a href="./chatkhara.html"><i class="fab fa-hotjar"></i> Chatkhara Meal</a>
+                    <a href="chatkhara.html"><i class="fab fa-hotjar"></i> Chatkhara Meal</a>
                 </li>
             </ul>
         </nav>
     </div>
+    <!-- Navigation categories Ends-->
 
     <main>
 
@@ -98,7 +110,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -115,7 +127,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -132,7 +144,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -149,7 +161,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -167,7 +179,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -184,7 +196,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -201,7 +213,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -218,7 +230,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -236,7 +248,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -253,7 +265,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -270,7 +282,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -287,7 +299,7 @@
                     <p class="product-price">Rs: 20.00/-</p>
                     <div class="product-btn-container">
                         <a href="#" class="product-btn"><i class="fas fa-list-ul"></i> Wishlist</a>
-                        <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                        <a href="../products/product-1.html" class="product-btn"><i class="fas fa-eye"></i> View</a>
                     </div>
                     <div class="add-container">
                         <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
@@ -306,60 +318,57 @@
             <span>&#8594; </span>
         </div>
     </main>
+    <!-- Footer start -->
+    <footer>
+        <section class="footer">
+            <div class="footer-widgets">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li>
+                            <a href="../index.html">Home</a> </li>
+                        <li>
+                            <a href="../index.html#menu-section">Menu</a>
+                        </li>
+                        <li>
+                            <a href="../aboutUS.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="../contact.html"> Contact Us</a></li>
+                        <li>
+                            <a href="#">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <h3>Social Links</h3>
+                    <ul>
+                        <li>
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f "></i>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/923330033996.com" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+
+                    <input type="email" name="Email" placeholder="Enter your Email here">
+                    <button type="submit">Subscribe</button>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> <i class="fab fa-hotjar"></i> Chatkhara Meal &copy; Copyright 2020. All Rights Reserved.</p>
+            </div>
+        </section>
+    </footer>
+    <!-- footer End -->
 </body>
-<footer>
-    <section class="footer">
-        <div class="footer-widgets">
-            <div class="quick-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li>
-                        <a href="#">Home</a> </li>
-                    <li>
-                        <a href="#">Menu</a>
-                    </li>
-
-
-                    <li>
-                        <a href="#">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#"> Contact Us</a></li>
-
-                    <li>
-                        <a href="#">Sign Up</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="social-links">
-                <h3>Social Links</h3>
-                <ul>
-                    <li>
-                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f "></i>Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i>Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i>Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://wa.me/923330033996.com" target="_blank"><i class="fab fa-whatsapp"></i>Whatsapp</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <h3>Newsletter</h3>
-
-                <input type="email" name="Email" placeholder="Enter your Email here">
-                <button type="submit">Subscribe</button>
-            </div>
-        </div>
-        <div class="copyright">
-            <p> <i class="fab fa-hotjar"></i> Chatkhara Meal &copy; Copyright 2020. All Rights Reserved.</p>
-        </div>
-    </section>
-
-</footer>
-
 </html>
