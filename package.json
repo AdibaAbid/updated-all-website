@@ -1,0 +1,22 @@
+{
+  "name": "updated-all-website",
+  "version": "1.0.0",
+  "description": "json task",
+  "main": "index.js",
+  "scripts": {
+    "json:server": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdibaAbid/updated-all-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdibaAbid/updated-all-website/issues"
+  },
+  "homepage": "https://github.com/AdibaAbid/updated-all-website#readme",
+  "dependencies": {
+    "json-server": "^0.16.1"
+  }
+}
