@@ -20,7 +20,7 @@ class UI {
         // debugger
         console.log(products)
         let result = '';
-        products.forEach(item => {
+        products.BakeryItemProducts.forEach((item) => {
             result += `
             <div class="product-item">
             <div class="img-wrapper">

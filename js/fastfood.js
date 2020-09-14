@@ -17,10 +17,9 @@ class Products {
 //Display Products
 class UI {
     displayProduct(products) {
-        // debugger
         console.log(products)
         let result = '';
-        products.forEach(item => {
+        products.fastFoodProducts.forEach(item => {
             result += `
             <div class="product-item">
             <div class="img-wrapper">

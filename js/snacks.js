@@ -18,9 +18,9 @@ class Products {
 class UI {
     displayProduct(products) {
         // debugger
-        console.log(products)
+        console.log('productsss**',products)
         let result = '';
-        products.forEach(item => {
+        products.Snacksproducts.forEach(item => {
             result += `
             <div class="product-item">
             <div class="img-wrapper">
