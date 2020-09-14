@@ -1,5 +1,5 @@
 {
-    "fastFood-Products":[
+    "fastFoodProducts":[
         {
             "id":"1",
             "title": "Chicken Burger",
@@ -16,7 +16,7 @@
             "id":"3",
             "title": "Beef Cheese Burger",
             "price": 300,
-            "image":"../images/fastfood-images/cheeseBurger.jpg"
+            "image":"../images/fastfood-images/beef-cheese-burger.jpg"
         },
         {
             "id":"4",
@@ -74,7 +74,7 @@
         }
 
     ],
-    "BakeryItem-Products":[
+    "BakeryItemProducts":[
         {
             "id":"1",
             "title":"Banana Bread",
@@ -148,7 +148,7 @@
             "image":"../images/bakeryitem-images/chicken-crispyPakorey.jpg"
         }
     ],
-    "Snacks-products":[
+    "Snacksproducts":[
         {
             "id":"1",
             "title":"Crinkle Chips",
@@ -234,7 +234,7 @@
             "address": "#"
         }
     ],
-    "chatkharaMeal-products":[
+    "chatkharaMealProducts":[
         {
             "id":"1",
             "title":"Chana Mong Papdi",
