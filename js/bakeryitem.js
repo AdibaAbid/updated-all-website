@@ -5,7 +5,7 @@ const productContainer = document.querySelector('.product-container')
 class Products {
     async getProducts() {
         try {
-            let result = await fetch('http://localhost:8000/BakeryItem-Products')
+            let result = await fetch('../db.json')
             let data = await result.json()
             return data;
         } catch (error) {
