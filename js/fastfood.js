@@ -33,7 +33,7 @@ class UI {
                 <p class="product-price">Rs: ${item.price}.00/-</p>
                 <div class="product-btn-container">
                     <a href="#" class="product-btn" data-id=${item.id}><i class="fas fa-list-ul"></i> Wishlist</a>
-                    <a href="#" class="product-btn"><i class="fas fa-eye"></i> View</a>
+                    <a href="${item.view}" class="product-btn"><i class="fas fa-eye"></i> View</a>
                 </div>
                 <div class="add-container">
                     <a href="#" class="product-btn cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</a>
