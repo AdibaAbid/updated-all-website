@@ -1,3 +1,18 @@
+//Span Cart Item
+ const spanCartItems = document.querySelector('.span-cart')
+ cart =JSON.parse( localStorage.getItem("cart"))
+ setCartValue(cart)
+ function setCartValue(cart){
+    let itemsTotal =0
+
+    cart.map((item)=>{
+        itemsTotal += item.amount
+        spanCartItems.innerText = itemsTotal 
+ })
+}
+
+
+
 // Script For Slider
 $(document).ready(function () {
     $('.my-slider').slick({

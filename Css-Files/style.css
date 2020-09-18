@@ -137,11 +137,12 @@ ul li {
 }
 
 .search-bar .search-btn .fas {
-    background-color: #fff;
-    color: #6d2c57;
-    /* padding: 6px 10px; */
-    padding: 4px 8px 9px 10px;
-    margin: -6px -16px;
+background-color: #fff;
+color: #6d2c57;
+/* padding: 6px 10px; */
+padding: 4px 7px 10px 10px;
+margin: -6px -16px;
+
 }
 
 .search-bar .search-btn .fas:hover {
@@ -1537,14 +1538,6 @@ ul li {
     transform: scale(1.4);
 }
 
-.search-bar .search-btn .fas {
-    background-color: #fff;
-    color: #6d2c57;
-    /* padding: 6px 10px; */
-    padding: 4px 8px 9px 10px;
-    margin: -6px -16px;
-}
-
 .search-bar .search-btn .fas:hover {
     transform: none;
     background-color: transparent;
@@ -1626,20 +1619,21 @@ ul li {
 }
 
 .add-to-cart span {
-    color: #fff;
-    background-color: #ca5202;
-    width: 90px;
-    padding: 5px 0;
-    border-radius: 8px;
-    text-align: center;
-    position: absolute;
-    top: -29px;
-    right: -5px;
-    font-size: 10px;
-    opacity: 0;
-    font-weight: normal;
-    transform: scale(0);
-    transition: .5s transform;
+color: #fff;
+background-color: #ca5202;
+width: 90px;
+padding: 5px 0;
+border-radius: 8px;
+text-align: center;
+position: absolute;
+top: -45px;
+right: -5px;
+font-size: 0.625em;
+opacity: 0;
+font-weight: normal;
+transform: scale(0);
+transition: .5s transform;
+
 }
 
 .tool-tip span {
@@ -2551,7 +2545,10 @@ label {
 
 /* Responsive Styles */
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1024px) {
+    body {
+        font-size: 15px;
+    }
     .contact-divs h2 {
         font-size: 1.7em;
     }
@@ -2632,7 +2629,71 @@ label {
     }
 }
 
-@media only screen and (max-width:790px) {
+@media only screen and (max-width:768px) {
+    /* copied from categories styles */
+    main {
+        margin: 0;
+    }
+    header{
+        height: 42vh;
+    }
+    .search-bar .search-section{
+        top:426%;
+        right: 60px;
+
+    }
+    nav img {
+        height: 115px;
+    }
+    .product-container {
+        justify-content: space-evenly;
+    }
+    .product-container {
+        text-align: center;
+    }
+    .product-item {
+        flex-basis: 50%;
+    }
+    
+.search-bar .search-btn .fas {
+    padding: 6px 8px 11px 10px;
+    
+    }
+    .page-btn {
+        text-align: center;
+    }
+    /* ------------------------ */
+    body {
+        font-size: 14px;
+    }
+    .row {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    .col-4 {
+        flex-basis: 50%;
+    }
+    .product-item {
+        flex-basis: 50%;
+    }
+    .page-division {
+        flex-direction: column;
+        text-align: center;
+    }
+    .inputs {
+        width: 100%;
+    }
+    .contact-section {
+        padding: 0 1em;
+    }
+    .slider-content .slider-desc h1 {
+        font-size: 1.875em;
+        padding: 5px 10px;
+    }
+    .slider-content {
+        height: 300px;
+    }
+
     .hamburger-btn i {
         display: inline-block;
     }
@@ -2667,6 +2728,9 @@ label {
     }
     #click:checked~ul li a {
         margin-left: 0px;
+    }
+    .right-side .hamburger-btn {
+        top: -142px;
     }
     .categories ul li {
         font-size: 13px;
@@ -2835,5 +2899,73 @@ label {
     }
 }
 
-
 /* Responsive Styles */
+
+@media only screen and (max-width:425px) {
+    .search-bar .search-btn .fas{
+        padding: 8px 9px 11px 10px;
+    }
+    .categories a{
+        font-size:10px;
+    }
+    .wrap-about{
+        top: 78%;
+    }
+    .right-side .hamburger-btn{
+        top: -135px;
+    }
+}
+@media only screen and (max-width:360px){
+    header{
+        height:33vh;
+    }
+    .my-slider .slider-content img{
+        width: 100%;
+        height: 75%;
+    }
+    .slider{
+        height: 300px;
+    }
+    .slider-content .slider-desc {
+        top: -115px;
+        padding: 0;
+    }
+    .hamburger-btn{
+        top: -137px;
+        right: 40px;
+    
+    }
+}
+@media only screen and(max-width:320px){
+    header{
+        height: 39vh;
+    }
+    .hamburger-btn{
+        right: 0;
+    }
+    .Product-feature h2::after {
+        content: '';
+        background: #f46107;
+        width: 35%;
+        height: 4px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        top: 30px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+}
+/* Responsive Styles end  */
+.add-to-cart a .span-cart{
+    opacity: 1;
+    background-color: #f46107;
+    padding: 8px;
+    color: #f6f6f6;
+    font-size: 12px;
+    right: -49px;
+    top: -25px;
+    position: relative;
+
+}
+

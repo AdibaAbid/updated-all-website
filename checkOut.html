@@ -1,93 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" crossorigin="anonymous">
     <!-- Css File -->
     <link rel="stylesheet" href="Css-Files/style.css">
     <link rel="stylesheet" href="Css-Files/addTocart.css">
+
     <!-- FontAwsome Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <!-- Model Styling -->
     <link rel="stylesheet" href="./Css-Files/signform.css">
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
     <title>Checkout | Chatkhara Meal</title>
 </head>
+
 <body>
-        <!-- Header -->
-        <header>
-            <div class="search-bar">
-                <div>
-                    <p> Welcome <span id="userGreetingName"></span> to Chatkhara Meal!</p>
-                </div>
-                <div class="search-section">
-                    <input type="text" placeholder="Search here..." />
-                    <button class="search-btn">
+    <!-- Header -->
+    <header>
+        <div class="search-bar">
+            <div>
+                <p>Welcome to Chatkhara Meal!</p>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="Search here..." />
+                <button class="search-btn">
+
               <i class="fas fa-search"></i>
             </button>
-                    <button class="tool-tip">
+                <button class="tool-tip">
               <a href="#">
                 <i class="fas fa-heart"></i>
                 <span>Wish List</span>
               </a>
             </button>
-                    <button class="tool-tip">
+                <button class="tool-tip">
               <a href="#">
                 <i class="fas fa-user-circle" onclick="document.getElementById('myModal').style.display='block'"></i>
                 <span class="login">Login Or Signup</span>
               </a>
             </button>
-                </div>
             </div>
-            <nav>
-                <div>
-                    <img src="../images/Logo/Logo-Chatkhara-01.png" alt="Chatkhara Meal Logo" />
-                </div>
-                <div class="right-side">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../index.html#menu-section">Menu</a></li>
-                        <li><a href="../aboutUS.html">About Us</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li class="add-to-cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"></i>
-                                <span>Add to cart</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-    
-        <!-- Navigation -->
-        <div class="nav-bar">
-            <nav class="categories">
+        </div>
+        <nav>
+            <div>
+                <img src="images/Logo/Logo-Chatkhara-01.png" alt="Chatkhara Meal Logo" />
+            </div>
+            <div class="right-side">
                 <ul>
-                    <li>
-                        <a href="./fastFood.html"><i class="fas fa-hamburger"></i> FastFood</a>
-                    </li>
-                    <li>
-                        <a href="./snacks.html"><i class="fas fa-cookie"></i> Snacks</a>
-                    </li>
-                    <li>
-                        <a href="./bakery-items.html"><i class="fas fa-bread-slice"></i> Bakery</a>
-                    </li>
-                    <li>
-                        <a href="./chatkhara.html"><i class="fab fa-hotjar"></i> Chatkhara Meal</a>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#menu-section">Menu</a></li>
+                    <li><a href="aboutUS.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li class="add-to-cart">
+                        <a href="checkOut.html">
+                            <span class="span-cart">0</span>
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to cart</span>
+                        </a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
+    </header>
 
-        <main>
-            <section class="addTocart-table">
-                <div class="addtoCart-wraper">
-                    <h2 class="title">Your Cart</h2>
+    <!-- Navigation -->
+    <div class="nav-bar">
+        <nav class="categories">
+            <ul>
+                <li>
+                    <a href="../categories/fastFood.html"><i class="fas fa-hamburger"></i> FastFood</a>
+                </li>
+                <li>
+                    <a href="../categories/snacks.html"><i class="fas fa-cookie"></i> Snacks</a>
+                </li>
+                <li>
+                    <a href="../categories/bakery-items.html"><i class="fas fa-bread-slice"></i> Bakery</a>
+                </li>
+                <li>
+                    <a href="../categories/chatkhara.html"><i class="fab fa-hotjar"></i> Chatkhara Meal</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <section class="addToCart">
+            <div class="addtoCart-wraper">
+                <h2 class="title">Your Cart</h2>
+                <div class="checkout-validation">
+                    <i class="fas fa-exclamation-circle"></i> Cart total must be greater than Rs 300
                 </div>
-            </section>
-        </main>
+                <div class="addtocart-table">
+                    <table>
+                        <caption>Order Details</caption>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th scope="col"></th>
+                                <th scope="col" colspan="2">Item Name</th>
+                                <th scope="col" colspan="2">Price</th>
+                                <th scope="col" colspan="2">Quantity</th>
+                                <th scope="col" colspan="2">Sub Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody class="displayCart">
+                           
+                            <!-- <tr>
+                                <th>1</th>
+                                <th scope="col"><img src="../images/fastfood-images/chickenshots.png" alt="product-img" id="table-img"></th>
+                                <td data-label="Item Name" colspan="2">Hot shots</td>
+                                <td data-label="Price" colspan="2">150 /-PKR</td>
+                                <td data-label="Quantity" colspan="2"><input type="number" id="Quantity" value="1" size="5"></td>
+                                <td data-label="Sub Total" colspan="2">150 /-PKR</td>
+                            </tr>
+                            <tr>
+                                <th>1</th>
+                                <th scope="col"><img src="../images/fastfood-images/chickenshots.png" alt="product-img" id="table-img"></th>
+                                <td data-label="Item Name" colspan="2">Hot shots</td>
+                                <td data-label="Price" colspan="2">150 /-PKR</td>
+                                <td data-label="Quantity" colspan="2"><input type="number" id="Quantity" value="1" size="5"></td>
+                                <td data-label="Sub Total" colspan="2">150 /-PKR</td>
+                            </tr> -->
+                        </tbody>
+                        <!-- <footer>
+                            <button class="order-placed">Update Cart</button>
+                            <button class="order-placed">Clear Cart</button>
+                        </footer> -->
+                         
+                    </table>
+                    <div class="subTotal">
+                        <h1 class="border-h1">Delivery Details</h1>
+                        <input type="text" name="userName" placeholder="User Name" />
+                        <h4>Sub Total:</h4>
+                        <span class="Total">Rs. 0</span>
+                        <h4>Delivery Charges:</h4>
+                        <span>Rs. 200</span>
+                        <h4 class="border-h4 ">Grand Total:</h4>
+                        <b><span class="grandTotal">Rs. 0</span></b>
+                        <button class="Order-placed">Proceed Checkout</button>
+                    </div>
+                </div>
+            </div>
+         
+
+        </section>
+    </main>
+    <script src="js/checkout.js"></script>
+    <!-- <script src="js/bakeryitem.js"></script> -->
+</body>
+
 
         <!-- Model Signin Signup -->
         <div id="myModal" class="modal">
@@ -200,17 +268,17 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li>
-                        <a href="#">Home</a> </li>
+                        <a href="index.html">Home</a> </li>
                     <li>
-                        <a href="#">Menu</a>
+                        <a href="index.html#menu-section">Menu</a>
                     </li>
                     <li>
-                        <a href="#">About Us</a>
+                        <a href="aboutUS.html">About Us</a>
                     </li>
                     <li>
-                        <a href="#"> Contact Us</a></li>
+                        <a href="contact.html"> Contact Us</a></li>
                     <li>
-                        <a href="#">Sign Up</a>
+                        <a href="#myModal">Sign Up</a>
                     </li>
                 </ul>
             </div>
