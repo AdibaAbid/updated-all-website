@@ -2476,6 +2476,11 @@ width: 90%;
         top: -115px;
         padding: 0;
     }
+    .hamburger-btn{
+        top: -137px;
+        right: 40px;
+    
+    }
 }
 @media only screen and(max-width:320px){
     header{
@@ -2496,7 +2501,7 @@ width: 90%;
         top: 30px;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-<<<<<<< HEAD
+}
 /* Responsive Styles end  */
 .add-to-cart a .span-cart{
     opacity: 1;
@@ -2507,10 +2512,5 @@ width: 90%;
     right: -49px;
     top: -25px;
     position: relative;
-=======
-.hamburger-btn{
-    top: -137px;
-    right: 40px;
-}
->>>>>>> a4d185eb36edcf42dde877fa9e7576caf0dd6d50
+
 }
