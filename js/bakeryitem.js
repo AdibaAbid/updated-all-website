@@ -72,16 +72,16 @@ class UI {
                 let cartItem = { ...Storage.getProductObj(id), amount: 1 }
                 console.log('obj of clicked item', cartItem)
                 
-                if(event.target.dataset.id === id) {
-                    console.log('amount brhega')
-                    cartItem.amount += 1
-                    // cart = [...cart, cartItem]
-                    console.log('cart array', cart)
-                    //save cart in Local storage
-                    Storage.saveCart(cart)
-                    //set cart value in span
-                    this.setCartValue(cart)
-                } else if(cartItem.amount == undefined){
+                // if(event.target.dataset.id === id) {
+                //     console.log('amount brhega')
+                //     cartItem.amount += 1
+                //     // cart = [...cart, cartItem]
+                //     console.log('cart array', cart)
+                //     //save cart in Local storage
+                //     Storage.saveCart(cart)
+                //     //set cart value in span
+                //     this.setCartValue(cart)
+                // } else if(cartItem.amount == undefined){
                     //add product to the cart
                     cart = [...cart, cartItem]
                     console.log('cart array', cart)
@@ -92,7 +92,7 @@ class UI {
                     //display cart item
                     // this.addCartItem(cartItem)
 
-                }
+                // }
 
             })
             // }

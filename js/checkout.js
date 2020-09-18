@@ -27,7 +27,6 @@ function  showProducts(cart) {
     })
     displayCartTable.innerHTML = result
 }
-{/* <input type="number" id="Quantity" value=${item.amount} size="5"></input> */}
 
 function setCartValue(cart){
     let tempTotal =0
