@@ -212,7 +212,7 @@ ul li {
 /* ToolTip Styling */
 
 .add-to-cart {
-    padding: 7px 30px;
+    /* padding: 7px 30px; */
     border-radius: 20px;
     transition: .5s;
     font-size: 22px;
@@ -2834,6 +2834,14 @@ label {
         width: 50%;
     }
 }
-
-
-/* Responsive Styles */
+/* Responsive Styles end  */
+.add-to-cart a .span-cart{
+    opacity: 1;
+    background-color: #f46107;
+    padding: 8px;
+    color: #f6f6f6;
+    font-size: 12px;
+    right: -49px;
+    top: -25px;
+    position: relative;
+}
