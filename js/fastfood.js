@@ -5,7 +5,7 @@ const productContainer = document.querySelector('.product-container')
 class Products {
     async getProducts() {
         try {
-            let result = await fetch('http://localhost:8000/fastFood-Products')
+            let result = await fetch('../db.json')
             let data = await result.json()
             return data;
         } catch (error) {
@@ -20,7 +20,7 @@ class UI {
         // debugger
         console.log(products)
         let result = '';
-        products.forEach(item => {
+        products["fastFood-Products"].forEach(item => {
             result += `
             <div class="product-item">
             <div class="img-wrapper">
