@@ -37,25 +37,8 @@ signupToggler.onclick = function () {
 // Model Scripts
 // Get the modal
 let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn");
-let closeModel = document.getElementsByClassName("close")[0];
-let closeModel1 = document.getElementsByClassName("close")[1];
+// Model Will Open & Close With The Help Of Inline JS
 
-
-// When the user clicks on the button, open the modal
-btn.onclick = function () {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-
-closeModel.onclick = function () {
-    modal.style.display = "none";
-}
-
-closeModel1.onclick = function () {
-    modal.style.display = "none";
-}
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
