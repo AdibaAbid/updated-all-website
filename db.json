@@ -243,7 +243,7 @@
             "title":"Salted Chips",
             "price":50,
             "view": "../categories/snacks-folder/salted-chips.html",
-            "image":"../images/Snacks-images/plain-chips.jpg",
+            "image":"../images/Snacks-images/salted-chips.jpeg",
             "address": "#"
         },
         {
@@ -251,7 +251,7 @@
             "title":"Nimco Mix",
             "price":50,
             "view": "../categories/snacks-folder/nimco-mix.html",
-            "image":"../images/Snacks-images/nimco-mix.jpg",
+            "image":"../images/Snacks-images/nimco_mix.jpeg",
             "address": "#"
         },
         {
