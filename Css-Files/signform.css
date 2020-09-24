@@ -16,7 +16,7 @@
 /* Modal Content Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto; 
+  margin: 5% auto; 
   padding: 30px;
   border: 1px solid #888;
   width: 40%; 
@@ -165,6 +165,7 @@ form#formlogIn button , form#formSignUp button{
 @media only screen and (max-width:576px) {
   .modal-content {
     width: 60%; 
+    padding: 20px;
   }
 
   form .header i{

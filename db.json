@@ -9,77 +9,77 @@
             "image":"../images/fastfood-images/chicken-burger-02.jpg"
         },
         {
-            "id": "2",
+            "id":"2",
             "title": "Hot Shots",
             "price": 180,
             "view": "../categories/fast-food-folder/hot-shots.html",
             "image":"../images/fastfood-images/chickenshots.png"
         },
         {
-            "id": "3",
+            "id":"3",
             "title": "Beef Cheese Burger",
             "price": 300,
             "view": "../categories/fast-food-folder/beef-cheese-burger.html",
             "image":"../images/fastfood-images/beef-cheese-burger.jpg"
         },
         {
-            "id": "4",
+            "id":"4",
             "title": "Club Sandwich",
             "price": 230,
             "view": "../categories/fast-food-folder/club-sandwitch.html",
             "image":"../images/fastfood-images/club-sandwich.jpg"
         },
         {
-            "id": "5",
+            "id":"5",
             "title": "Fresh Pasta",
             "price": 300,
             "view": "../categories/fast-food-folder/fresh-pasta.html",
             "image":"../images/fastfood-images/pasta.jpg"
         },
         {
-            "id": "6",
+            "id":"6",
             "title": "Delicious Lasagna",
             "price": 320,
             "view": "../categories/fast-food-folder/delicious-lasagnia.html",
             "image":"../images/fastfood-images/lasagna.jpg"
         },
         {
-            "id": "7",
-            "title": "Fried Wings",
+            "id":"7",
+            "title":"Fried Wings",
             "price": 80,
             "view": "../categories/fast-food-folder/fried-wings.html",
             "image":"../images/fastfood-images/wings.jpg"
         },
         {
-            "id": "8",
-            "title": "Zinger Burger",
+            "id":"8",
+            "title":  "Zinger Burger",
             "price": 340,
             "view": "../categories/fast-food-folder/chicken-burger.html",
             "image":"../images/fastfood-images/zinger-burger.jpg"
         },
         {
-            "id": "9",
+            "id":"9",
             "title": "Pizza Fries",
             "price": 200,
             "view": "../categories/fast-food-folder/pizza-fries.html",
             "image":"../images/fastfood-images/pizza-fries.jpg"
         },
         {
-            "id": "10",
+            "id":"10",
             "title": "Spicy Broast",
             "price": 200,
             "view": "../categories/fast-food-folder/spicy-broast.html",
             "image":"../images/fastfood-images/broast.jpg"
         },
         {
-            "id": "11",
+            "id":"11",
             "title": "Loaded Fries",
             "price": 220,
             "view": "../categories/fast-food-folder/loaded-fries.html",
             "image":"../images/fastfood-images/best-loaded-fries.jpg"
         },
         {
-            "id": "12",
+            "id":"12",
             "title": "Plain Salted Fries",
             "price": 150,
             "view": "../categories/fast-food-folder/plain-salted-fries.html",
