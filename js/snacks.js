@@ -113,7 +113,7 @@ class UI {
     }
     static getProductObj(id) {
         let products = JSON.parse(localStorage.getItem('products'))
-        let item = products.chatkharaMealProducts.find(obj => obj.id === id)
+        let item = products.Snacksproducts.find(obj => obj.id === id)
         return item
     }
     static saveCart(cart) {

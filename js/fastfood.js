@@ -112,7 +112,7 @@ class UI {
     }
     static getProductObj(id) {
         let products = JSON.parse(localStorage.getItem('products'))
-        let item = products.chatkharaMealProducts.find(obj => obj.id === id)
+        let item = products.fastFoodProducts.find(obj => obj.id === id)
         return item
     }
     static saveCart(cart) {
@@ -151,5 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //get all Products
     products.getProducts()
-        .then(data => ui.displayProduct(data))
+        .then(data => {
+            ui.displayProduct(data)
+            Storage.saveProduct(data)
+        }).then(() => {
+            ui.getCartButton()
+        })
 })

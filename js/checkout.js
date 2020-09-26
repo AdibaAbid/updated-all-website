@@ -5,6 +5,7 @@ const grandTotalAmount = document.querySelector('.grandTotal')
 const checkoutValidation = document.querySelector('.checkout-validation')
 
 let cart =[]
+
 cart =JSON.parse( localStorage.getItem("cart"))
 console.log(cart)
 setCartValue(cart)
